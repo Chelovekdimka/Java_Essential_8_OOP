@@ -9,10 +9,11 @@ import java.util.Objects;
 public class Animal {
     private String name;
     private int age;
-    private boolean tail;
+    private boolean hasTail;
 
     @Override
     public String toString() {
+        String tail = hasTail ? "так" : "ні";
         return "Ім'я: " + name +
                 ", вік: " + age +
                 ", хвіст: " + tail;
@@ -23,11 +24,12 @@ public class Animal {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Animal animal = (Animal) o;
-        return age == animal.age && tail == animal.tail && name.equals(animal.name);
+        return age == animal.age && hasTail == animal.hasTail && name.equals(animal.name);
     }
+
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, age, tail);
+        return Objects.hash(name, age, hasTail);
     }
 }
