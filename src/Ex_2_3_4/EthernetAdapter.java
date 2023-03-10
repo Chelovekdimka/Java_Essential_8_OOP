@@ -1,4 +1,4 @@
-package Ex_2;
+package Ex_2_3_4;
 
 import java.util.Objects;
 
@@ -27,7 +27,12 @@ public class EthernetAdapter extends Device {
     public void setMac(String mac) {
         this.mac = mac;
     }
-
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", speed = " + speed +
+                ", mac " + mac;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

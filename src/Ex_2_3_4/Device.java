@@ -3,8 +3,10 @@
 //        і EthernetAdapter (speed(int), mac(String)); Додати методи доступу. Конструктор.
 //В обох класах перевизначити метод toString, щоб висновок був наступним:
 //        Device: manufacturer = Samsung, price = 120, serialNumber=AB1234567CD, X=1280,Y=1024.
+//Перевизначити методи equals & hashCode у кожному класі.
+//        Створити клас Main, де створити об'єкти класів і продемонструвати перевизначені методи.
 
-package Ex_2;
+package Ex_2_3_4;
 
 import java.util.Objects;
 
